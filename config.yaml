@@ -1,0 +1,23 @@
+project_name: "Multi-Task CNN"
+version: "v1"
+author: "Pranav Rao"
+
+data:
+  annotations:
+    raw: "data/annotations"
+    processed:
+    production:
+    version: "v1"
+  images:
+    raw: "data/images"
+    processed:
+    production:
+    version: "v1"
+
+model:
+  path: models/v1/
+  version: "v1"
+  checkpoints: models/v1/checkpoints
+
+wandb:
+  project: ""

@@ -1,0 +1,5 @@
+.vscode
+*.ipynb
+progress.md
+*.tar.gz
+*.torrent

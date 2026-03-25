@@ -18,11 +18,11 @@ class VGG11(nn.Module):
         DROPOUT IN CNN SPARINGLY
     """
 
-    def __init__(self, in_channels, num_classes=37):
+    def __init__(self, in_channels, num_classes=37, p = 0.5):
         super(VGG11, self).__init__()
         self.in_channels = in_channels
         self.num_classes = num_classes
-        self.p = 0.5
+        self.p = p
 
         # convolutional layers
         self.conv_layers = nn.Sequential(  # ENCODING LAYER
