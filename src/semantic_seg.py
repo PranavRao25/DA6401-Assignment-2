@@ -56,7 +56,7 @@ s = 1, p = 0, k = 3, d = 1 => o = 6
 s = 2, p = 1, k = 3, d = 1 => o = 1
 """
 
-class LazyVGG11Decode(nn.Module):
+class LazyVGG11Upsample(nn.Module):
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
 
@@ -159,8 +159,10 @@ class LazyVGG11Decode(nn.Module):
             x = layer(x)
         return x
 
+
+
 class UNet(nn.Module):
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(self, no_classes=37, *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
 
         self.encoder = LazyVGG11Encode()
@@ -175,10 +177,10 @@ class UNet(nn.Module):
             nn.ReLU(),
         )
 
-        self.decoder = LazyVGG11Decode()
+        self.decoder = LazyVGG11Upsample()
 
         self.output = nn.Sequential(
-            nn.LazyConv2d(1, kernel_size=3, padding=1),
+            nn.LazyConv2d(no_classes, kernel_size=3, padding=1),
             nn.Sigmoid()
         )
     

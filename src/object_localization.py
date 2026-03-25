@@ -4,6 +4,7 @@ import yaml
 from typing import Any
 from pathlib import Path
 from encoder import LazyVGG11Encode
+from heads import *
 from dropout import Dropout
 
 """
@@ -26,41 +27,14 @@ class ObjectLocalizer(nn.Module):
     def __init__(self, in_channels, num_classes = 37, output_size=4, p=0.5, *args: Any, **kwargs: Any) -> None:
         super(ObjectLocalizer, self).__init__(*args, **kwargs)
         self.in_channels = in_channels
-        self.output_size = 4
+        self.output_size = output_size
         self.num_classes = num_classes
         self.p = p
 
         self.encoder = LazyVGG11Encode()
-        self.regression_decoder = nn.Sequential(
-            # LINEAR 1
-            nn.Flatten(),
-            nn.Linear(in_features=512*7*7, out_features=4096),
-            nn.ReLU(),
-            Dropout(self.p),
-
-            # LINEAR 2
-            nn.Linear(in_features=4096, out_features=4096),
-            nn.ReLU(),
-            Dropout(self.p),
-
-            # LINEAR 3
-            nn.Linear(in_features=4096, out_features=self.output_size)
-        )
-
-        self.classification_layer = nn.Sequential(
-            # LINEAR 1
-            nn.Linear(in_features=512*7*7, out_features=4096),
-            nn.ReLU(),
-            Dropout(self.p),
-
-            # LINEAR 2
-            nn.Linear(in_features=4096, out_features=4096),
-            nn.ReLU(),
-            Dropout(self.p),
-
-            # LINEAR 3 (OUTPUT LAYER)
-            nn.Linear(in_features=4096, out_features=self.num_classes)
-        )
+        encoder_output_dim = 512*7*7
+        self.regression_decoder = RegressionVGG11(encoder_output_dim, self.output_size, p)
+        self.classification_layer = ClassificationVGG11(encoder_output_dim, self.num_classes, p)
 
     def forward(self, x: torch.Tensor):
         x = self.encoder(x)

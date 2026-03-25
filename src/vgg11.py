@@ -25,7 +25,7 @@ class VGG11(nn.Module):
         self.p = 0.5
 
         # convolutional layers
-        self.conv_layers = nn.Sequential(
+        self.conv_layers = nn.Sequential(  # ENCODING LAYER
             # BLOCK 1
             nn.Conv2d(self.in_channels, 64, kernel_size=3, padding=1),
             nn.BatchNorm2d(num_features=64),
@@ -85,7 +85,7 @@ class VGG11(nn.Module):
         )
         # fully connected linear layers
         # Does it requires BatchNorm1D?
-        self.linear_layers = nn.Sequential(
+        self.linear_layers = nn.Sequential(  # classification layer
             # LINEAR 1
             nn.Linear(in_features=512*7*7, out_features=4096),
             nn.ReLU(),
