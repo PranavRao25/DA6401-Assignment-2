@@ -1,9 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader, Dataset
-# from torch.cuda.amp import autocast, GradScaler
-from torchvision import transforms
+from torch.utils.data import DataLoader
 from tqdm import tqdm
 import wandb
 import os
@@ -16,6 +14,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from augments import resize_pipeline
+from dataset import *
 
 parent = Path(__file__).resolve().parent.parent
 
@@ -24,6 +24,13 @@ with open(parent / "train1.yaml", "r") as f:
 
 with open(parent / "configs.yaml", "r") as f:
     configs = yaml.full_load(f)
+
+complete_train_path = configs["data"]["complete"]["train"]
+incomplete_train_path = configs["data"]["incomplete"]["train"]
+complete_valid_path = configs["data"]["complete"]["valid"]
+incomplete_valid_path = configs["data"]["incomplete"]["valid"]
+complete_test_path = configs["data"]["complete"]["test"]
+incomplete_test_path = configs["data"]["incomplete"]["test"]
 
 class TrainObjectLocalization():
     def __init__(self) -> None:
@@ -45,9 +52,9 @@ class TrainObjectLocalization():
         self.model = ObjectLocalizer(in_channels=self.IN_CHANNELS, num_classes=self.NUM_CLASSES,
                                      output_size=4, p = self.dropout)
 
-        self._initialize_loader(self.dataset_path)
+        self._initialize_loader()
 
-    def _initialize_loader(self, dataset_path):
+    def _initialize_loader(self):
             # 3. Data Transformations (TODO: perform in seperate file/class)
         # CRITICAL: Input must be exactly 224x224 for your current linear layer configuration
         # transform = transforms.Compose([
@@ -71,45 +78,30 @@ class TrainObjectLocalization():
         pass
 
     def train_model(self):
-        # Move model to the selected device
         self.model = self.model.to(self.device)
-        
-        # Loss function and Optimizer
         criterion = nn.CrossEntropyLoss()  # Classification
-
-        # AdamW is generally preferred over standard Adam for models with many parameters (like VGG) due to better weight decay handling
         optimizer = optim.AdamW(self.model.parameters(), lr=self.lr, weight_decay=1e-4)
-        
-        # Learning Rate Scheduler: Reduces LR when a metric has stopped improving
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.1, patience=3)
         
-        # Initialize GradScaler for Automatic Mixed Precision (AMP)
-        # scaler = GradScaler()
-        
-        # Training Loop
         for epoch in range(self.epochs):
             self.model.train()
             running_loss = 0.0
             correct_train = 0
             total_train = 0
+            val_loss = 0.0
+            correct_val = 0
+            total_val = 0
             
             loop = tqdm(self.train_loader, desc=f"Epoch [{epoch+1}/{self.epochs}] Train")
             for images, labels in loop:
                 images, labels = images.to(self.device), labels.to(self.device)
                 
-                optimizer.zero_grad(set_to_none=True) # Slightly faster than zero_grad()
-                
-                # Forward pass with AMP
-                # with autocast():
-                #     outputs = model(images)
-                #     loss = criterion(outputs, labels)
-                
-                # Backward pass and optimization
-                # scaler.scale(loss).backward()
-                # scaler.step(optimizer)
-                # scaler.update()
-                
-                # Tracking metrics
+                optimizer.zero_grad(set_to_none=True)
+                outputs = self.model(images)
+                loss = criterion(outputs, labels)
+                loss.backward()
+                optimizer.step()
+
                 running_loss += loss.item()
                 _, predicted = torch.max(outputs.data, 1)
                 total_train += labels.size(0)
@@ -122,10 +114,6 @@ class TrainObjectLocalization():
             
             # Validation Loop
             self.model.eval()
-            val_loss = 0.0
-            correct_val = 0
-            total_val = 0
-            
             with torch.no_grad():
                 for images, labels in self.val_loader:
                     images, labels = images.to(self.device), labels.to(self.device)
@@ -187,21 +175,20 @@ class TestObjectLocalization():
         self.batch_size = args["batch_size"] or 32
         self.epochs = args["epochs"] or 50
         self.lr = args["lr"] or 1e-4
+        self.dropout = args["drop_out"] or 0.5
         self.wgt_decay = args["wgt_decay"] or 1e-4
         self.model_save_name = args["path"]
-        
-        # Load dataset
-        self.dataset_path = configs["data"]["processed"]
 
         # Data related parameters
         self.IN_CHANNELS = 3 # e.g., RGB images
         self.NUM_CLASSES = 37 # e.g., Oxford-IIIT Pet dataset
 
-        self.model = VGG11(in_channels=self.IN_CHANNELS, num_classes=self.NUM_CLASSES)
+        self.model = ObjectLocalizer(in_channels=self.IN_CHANNELS, num_classes=self.NUM_CLASSES,
+                                     output_size=4, p = self.dropout)
 
-        self._initialize_loader(self.dataset_path)
+        self._initialize_loader()
 
-    def _initialize_loader(self, dataset_path):
+    def _initialize_loader(self):
         # Assuming you have a test_loader defined similarly to train_loader
         # test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
         pass
@@ -230,12 +217,11 @@ class TestObjectLocalization():
         """
 
         model = self.model.to(self.device)
-        model.eval() # Crucial: disables dropout and sets batch norm to evaluation mode
+        model.eval()
         
         all_preds = []
         all_labels = []
         
-        # Disable gradient calculation for faster inference and reduced memory
         with torch.no_grad():
             for images, labels in self.test_loader:
                 images, labels = images.to(self.device), labels.to(self.device)
@@ -246,12 +232,9 @@ class TestObjectLocalization():
                 all_preds.extend(predicted.cpu().numpy())
                 all_labels.extend(labels.cpu().numpy())
                 
-        # Calculate metrics
         print("\n--- Test Set Evaluation ---")
         report = classification_report(all_labels, all_preds, target_names=class_names, digits=4)
         print(report)
-        
-        # Generate Confusion Matrix
         cm = confusion_matrix(all_labels, all_preds)
         return cm, all_labels, all_preds
 
@@ -267,8 +250,8 @@ class TestObjectLocalization():
         plt.show()
 
 if __name__ == "__main__":
-    trainer = TrainVGG11()
+    trainer = TrainObjectLocalization()
     trainer.train_model()
 
-    tester = TestVGG11()
+    tester = TestObjectLocalization()
     tester.evaluate_model()

@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import keras
 import yaml
-from dropout import Dropout
+from src.dropout import Dropout
 from pathlib import Path
 from torch import nn
 

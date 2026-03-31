@@ -3,3 +3,5 @@
 progress.md
 *.tar.gz
 *.torrent
+*.pyc
+wandb/

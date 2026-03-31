@@ -1,0 +1,233 @@
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+INFO: data loader done
+INFO: train start
+INFO: epoch - 0
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+INFO: data loader done
+INFO: train start
+INFO: epoch - 0
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+INFO: data loader done
+INFO: train start
+INFO: epoch - 0
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+INFO: data loader done
+INFO: train start
+INFO: epoch - 0
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+INFO: data loader done
+INFO: train start
+INFO: epoch - 0
+DEBUG: Using selector: EpollSelector
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'version'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=None, shell=False, universal_newlines=False)
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/pranav-rao/Documents/iit madras/iDL, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO: TRAIN CONFIGS CREATED
+INFO: Train init
+DEBUG: Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+DEBUG: https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 384
+INFO: data loader done
+INFO: train start
+INFO: epoch - 0

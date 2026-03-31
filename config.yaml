@@ -5,7 +5,7 @@ author: "Pranav Rao"
 data:
   annotations:
     raw: "data/annotations"
-    processed:
+    processed: "data/annotations/processed"
     production:
     version: "v1"
   images:
@@ -13,7 +13,14 @@ data:
     processed:
     production:
     version: "v1"
-
+  complete:
+    train: "data/train_complete.json"
+    valid: "data/valid_complete.json"
+    test: "data/test_complete.json"
+  incomplete:
+    train: "data/train_incomplete.json"
+    valid: "data/valid_incomplete.json"
+    test: "data/test_incomplete.json"
 model:
   path: models/v1/
   version: "v1"
